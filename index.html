@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bank Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Bank Management System</h1>
+    </header>
+    <main>
+        <section id="account-section">
+            <h2>Create Account</h2>
+            <form id="account-form">
+                <label for="account-number">Account Number:</label>
+                <input type="number" id="account-number" required>
+                <label for="account-holder">Account Holder:</label>
+                <input type="text" id="account-holder" required>
+                <label for="initial-balance">Initial Balance:</label>
+                <input type="number" id="initial-balance" required>
+                <button type="submit">Create</button>
+            </form>
+        </section>
+        <section id="transaction-section">
+            <h2>Make Transaction</h2>
+            <form id="transaction-form">
+                <label for="transaction-account">Account Number:</label>
+                <input type="number" id="transaction-account" required>
+                <label for="transaction-type">Transaction Type:</label>
+                <select id="transaction-type" required>
+                    <option value="deposit">Deposit</option>
+                    <option value="withdraw">Withdraw</option>
+                    
+                </select>
+                <label for="transaction-amount">Amount:</label>
+                <input type="number" id="transaction-amount" required>
+                <button type="submit">Submit</button>
+                <label for="view-account-number">Account Number:</label>
+<input type="number" id="view-account-number" required>
+<button id="view-balance-button">View Balance</button>
+<div id="balance-display"></div>
+            </form>
+        </section>
+        <section id="output-section">
+            <h2>Transaction Log</h2>
+            <div id="transaction-log"></div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
