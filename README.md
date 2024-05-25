@@ -1,7 +1,7 @@
-technology :
+Technology :
 HTML
 CSS
-JAVA SCRIPT
+JAVA-SCRIPT
 
 
 look :
